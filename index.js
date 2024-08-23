@@ -16,6 +16,9 @@ app.get('/login',(req,res)=>{
 app.get('/register',(req,res)=>{
       res.send('<h2>register to the page</h2>')
 })
+ app.get('/github',(req,res)=>{
+    res.send('<h1>github is opened</h1>')
+ })
   const port=process.env.PORT;
  app.listen(port,()=>{
     console.log(`server is listening at port no ${port} `);
